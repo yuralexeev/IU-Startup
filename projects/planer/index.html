@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ШколаПлан — автоматическое расписание</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Составьте школьное расписание за 1–2 дня вместо 2 недель</h1>
+      <p>ШколаПлан автоматически создаёт расписание с учётом ИУП, групп и ограничений — без ошибок и бесконечных переделок.</p>
+      <button class="btn" onclick="scrollToForm()">Получить пилот</button>
+    </div>
+  </section>
+
+  <section class="section problems">
+    <div class="container">
+      <h2>Знакомо?</h2>
+      <ul>
+        <li>Расписание делается 1–2 недели</li>
+        <li>Любая ошибка ломает всё</li>
+        <li>ИУП и группы невозможно учесть нормально</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Как это работает</h2>
+      <div class="steps">
+        <div class="step">
+          <h3>1. Загрузите Excel</h3>
+          <p>Импортируйте учеников и предметы.</p>
+        </div>
+        <div class="step">
+          <h3>2. Настройте группы</h3>
+          <p>Распределите учеников визуально.</p>
+        </div>
+        <div class="step">
+          <h3>3. Получите результат</h3>
+          <p>Готовое расписание за 10 минут.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section form-section" id="form">
+    <div class="container">
+      <h2>Записаться на пилот</h2>
+      <form id="leadForm">
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Название школы">
+        <textarea placeholder="Комментарий"></textarea>
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+      <p id="successMessage" class="hidden">Спасибо! Мы свяжемся с вами.</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
